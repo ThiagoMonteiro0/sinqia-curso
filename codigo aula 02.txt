@@ -1,0 +1,36 @@
+const string MensagemBoasVinda = "Hello World"; 
+
+            Console.WriteLine(MensagemBoasVinda);
+
+            //int x = 10;
+            //float z = 1.5f;
+            //double a = 1.5; //suporta o dobro de valor do float
+            //bool b = true;
+            //string y = "cadeia de caracteres";
+            //char c = 'c';
+
+            Console.WriteLine("Bem vindo a simples calculadora");
+            Console.WriteLine("Escolha a operação matemática abaixo:");
+Console.WriteLine("1 - Soma");
+            Console.WriteLine("2 - Multiplicação");
+            Console.WriteLine("3 - Divisão");
+            Console.WriteLine("4 - Subtração");
+            Console.WriteLine("5 - Resto");
+            Console.WriteLine("6 - Sair da calculadora");
+            Console.Write("Opção: ");
+            
+            int opcao = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Digite o primeiro valor: "); 
+double valor1 = Double.Parse(Console.ReadLine()); ;
+            double valor2;
+            Console.Write("Digite o segundo valor: ");
+            Double.TryParse(Console.ReadLine(), out valor2);
+
+            Console.WriteLine($"A soma dos dois valores é: {valor1 + valor2}");
+            
+            Console.WriteLine($"A multiplicação dos dois valores é: {valor1 * valor2}");
+Console.WriteLine($"A divisão dos dois valores é: {valor1 / valor2}");
+
+            Console.WriteLine($"A subtração dos dois valores é: {valor1 - valor2}");
+
+            Console.WriteLine($"A resto da divisão dos dois valores é: {valor1 % valor2}");
